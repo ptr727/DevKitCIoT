@@ -1,0 +1,212 @@
+(footprint "Fuse_Littelfuse_392Series"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Littlefuse 392 series TE5 subminiature fuses")
+	(property "Reference" "F**"
+		(at -0.5 -4 0)
+		(layer "F.SilkS")
+		(uuid "a9ec1f23-a4af-4079-be09-b6fc22b86b69")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Fuse_Littelfuse_392Series"
+		(at 2.54 4 0)
+		(layer "F.Fab")
+		(uuid "a36690d5-5cdc-4c35-be2e-f8e9acefe9ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a310db7-1511-4795-a181-56f6c991828d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "799e6484-822b-401a-9bc6-4a5042d50fd1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.71 -2)
+		(end 6.79 -2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7e96b640-185c-46ed-b109-6c006a24cf58")
+	)
+	(fp_line
+		(start -1.71 2)
+		(end -1.71 -2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e48b49b8-3986-4c05-b76d-c018d551976d")
+	)
+	(fp_line
+		(start 6.79 -2)
+		(end 6.79 2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c0ad96ec-5535-4338-8e9e-4e94610febce")
+	)
+	(fp_line
+		(start 6.79 2)
+		(end -1.71 2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "622e2b3b-da75-48e4-b407-f70aea599de8")
+	)
+	(fp_line
+		(start -2.71 -3)
+		(end 7.79 -3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f29db630-f31b-4c07-ac00-d3783d2ddd78")
+	)
+	(fp_line
+		(start -2.71 3)
+		(end -2.71 -3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7021cd56-4dd0-4fdf-8078-f0ada56b81fc")
+	)
+	(fp_line
+		(start 7.79 -3)
+		(end 7.79 3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "971996f4-26a7-4f09-baf3-012ae3039457")
+	)
+	(fp_line
+		(start 7.79 3)
+		(end -2.71 3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "773dc9b0-4ef1-4761-8895-7ac7a62caf92")
+	)
+	(fp_line
+		(start -1.71 -2)
+		(end 6.79 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "69aba66c-4845-4637-b2f5-b3babe46b20f")
+	)
+	(fp_line
+		(start -1.71 2)
+		(end -1.71 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "45d3f4c2-288e-4044-a476-e3eb65a8593b")
+	)
+	(fp_line
+		(start 6.79 -2)
+		(end 6.79 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0c7c9a08-d30d-40f0-ab8a-21ed111f418d")
+	)
+	(fp_line
+		(start 6.79 2)
+		(end -1.71 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "381817a1-9cf7-4cfb-9e01-209f93370e12")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 0 0)
+		(layer "F.Fab")
+		(uuid "f95eaca7-c3f1-43ba-97cf-773d424602cc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.5 1.5)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "224cee3e-8879-4d4a-a53f-8b039ae7c02a")
+	)
+	(pad "2" thru_hole circle
+		(at 5.08 0)
+		(size 1.5 1.5)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a242ef04-70b9-4448-a243-7d718a6b5d9f")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/packages3d/Fuse_Littlefuse_392.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

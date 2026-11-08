@@ -1,0 +1,16 @@
+# The pre-commit (pre-commit.com) hooks, from the ProjectTemplate hub's pre-commit snippet, keeping the two doc gates every repo owes.
+# Install and enable with `uv tool install pre-commit` once, then `pre-commit install`.
+# The hooks fetch their scripts fresh from ptr727/ProjectTemplate's `main` branch via hub_fetch_run.py, so a fetch failure fails the commit rather than skipping the gate.
+repos:
+  - repo: local
+    hooks:
+      - id: prose-gate
+        name: prose/comment-style gate (diff-scoped, fetched fresh from ProjectTemplate@main)
+        entry: uv run --no-project python hub_fetch_run.py .github/actions/prose-gate/prose_lint.py --skip-generated --diff HEAD --
+        language: system
+        require_serial: true
+      - id: eol-gate
+        name: line-ending consistency gate (fetched fresh from ProjectTemplate@main)
+        entry: uv run --no-project python hub_fetch_run.py .github/actions/repo-gate/repo_gate.py --check eol
+        language: system
+        pass_filenames: false

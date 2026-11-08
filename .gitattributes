@@ -1,0 +1,24 @@
+# Normalize a detected text file to LF in the index when it is first added or renormalized.
+# Check such a file out to LF except where a CRLF pin below applies.
+# `text=auto` byte-preserves only files Git's heuristic detects as binary.
+# A text-shaped file whose bytes have to be kept needs its own `-text` or `binary` pin.
+* text=auto eol=lf
+
+# Windows command scripts require CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Third-party 3D models keep the exact bytes their provider published.
+*.step -text
+*.stp -text
+*.STEP -text
+
+# KiCad writes these in text mode, so it saves them CRLF on Windows and LF on Linux and macOS.
+# The index stays LF.
+# With Git's default settings, a checkout uses the platform's line endings to match.
+*.kicad_sch text !eol
+*.kicad_pcb text !eol
+*.kicad_sym text !eol
+*.kicad_mod text !eol
+fp-lib-table text !eol
+sym-lib-table text !eol

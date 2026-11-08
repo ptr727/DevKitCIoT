@@ -1,0 +1,45 @@
+# https://github.com/github/gitignore/blob/main/KiCad.gitignore
+
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# ERC / DRC report files
+*.rpt
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Gerber job file written beside the exported Gerbers
+*.gbrjob
+
+# Exported BOM files
+*.xml
+*.csv
+# Keep the committed fabrication BOM
+!fabrication/DevKitCIoT_BOM.csv
+
+# Lock files
+*.lck
+
+# KiCad Local History (automatic project snapshots in their own git repository)
+.history/

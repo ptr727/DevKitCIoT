@@ -1,0 +1,4 @@
+{
+    "note": "This repository's own host-tool declaration, layered over the fleet declaration by the hub's scripts/host_gate.py. It is empty because this repository needs no tool beyond the fleet declaration; KiCad itself is a maintainer workstation tool documented in OPERATIONS.md.",
+    "tools": []
+}

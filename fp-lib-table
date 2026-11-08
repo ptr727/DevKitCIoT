@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "DevKitCIoT") (type "KiCad") (uri "${KIPRJMOD}/lib/DevKitCIoT.pretty") (options "") (descr "Project-local footprints, copied from the ptr727 KiCadLibrary 2.0.0 release"))
+)
